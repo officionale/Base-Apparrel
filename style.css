@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg, hsl(330, 100%, 100%), hsl(5, 85%, 97%)) no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 800px;    
+}
+.logo{
+    margin:  9%  0 7%  5%;
+    height: 19px;
+    width: 95px;
+}
+.hero-mobile{
+    height: 250px;
+    max-width: 100vw;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head1{
+    margin-top: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.one ,.two{
+ font-size: 35px;
+ text-align: center;
+}
+.one{
+    color: hsl(1, 32%, 73%);
+}
+.text2{
+    margin-top: 15px;
+    color: hsl(0, 21%, 72%);
+    text-align: center;
+    width: 75%;
+    font-size: 13px;
+    line-height: 20px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: 1px solid #eee5e6;
+    width: 60%;
+    height: 35px;
+    border-radius: 22px;
+    left: 3%;
+    margin-top: 15px;
+}
+button{
+    position: relative;
+    left: -7%;
+    width: 18%;
+    height: 35px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    background: #f2aaab;
+    border-radius: 22px;
+    box-shadow: 1px 2px 3px 0px  hsla(0, 0%, 0%, 0.15);
+}
+.arrow{
+    height: 13px;
+}
+.desktop-avatar{
+    display: none;
+}
+
+@media screen and (min-width: 378px){
+    body{
+        all: unset;
+        background: url(./images/bg-pattern-desktop.svg) no-repeat left;  
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .wrapper{
+        display: flex;
+    }
+    main{
+        max-width: 830px;
+    }
+    .logo{
+        margin: 5%  0 7%  15%;
+    }
+    .mobile-avaatar, .hero-mobile{
+        display: none;
+    }
+    .hero-desktop{
+        height: 99.5vh;
+        width: 40vw;
+    }
+    .desktop-avatar{
+        visibility: visible;
+        display: block;
+    }
+    .text{
+        all: unset;
+    }
+    .one, .two{
+        text-align: left;
+        margin-left: 15%;   
+        letter-spacing: 10px;
+    }
+    .text2{
+        text-align: left;
+        margin-left: 15%;
+        width: 40%;
+        margin-top: 30px;
+        line-height: 23px;
+    }
+    .input{
+        margin-top: 40px;
+    }
+    input{
+        all: unset;
+        position: relative;
+        left: -11%;
+        background: transparent;
+        outline: none;
+        border: 1px solid #eee5e6;
+        width: 35%;
+        height: 35px;
+        border-radius: 22px;
+        margin-top: 30px;
+    }
+    button{
+        left: -14%;
+        margin-top: 29px;
+        width: 13%;
+        height: 36px;
+        cursor: pointer;
+        scale: 1;
+        transition: 0.5s;
+    }
+    button:hover{
+        scale: 1.1;
+    }
+
+    input::placeholder{
+        color:#ce9797;
+        padding: 5px;
+    }
+    input:focus{
+        border: 2px solid #E5807E;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+ 
