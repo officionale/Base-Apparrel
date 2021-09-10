@@ -100,6 +100,8 @@ button{
     .hero-desktop{
         height: 99.5vh;
         width: 40vw;
+        position: relative;
+        left: 13%;
     }
     .desktop-avatar{
         visibility: visible;
